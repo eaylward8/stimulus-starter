@@ -1,3 +1,20 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
+
+.clipboard-btn {
+  display: none;
+}
+
+.clipboard--supported .clipboard-btn {
+  display: initial;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.slide--current {
+  display: block;
+  font-size: 5rem;
+}
