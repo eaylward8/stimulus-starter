@@ -3,6 +3,10 @@ import { Controller } from "stimulus"
 export default class extends Controller {
   static targets = ["slide"]
 
+  initialize() {
+    this.showSlide()
+  }
+
   get slides() {
     return this.slideTargets
   }
@@ -17,10 +21,6 @@ export default class extends Controller {
 
   set index(value) {
     this.data.set('index', value)
-  }
-
-  initialize() {
-    this.showSlide()
   }
 
   onFirstSlide() {
