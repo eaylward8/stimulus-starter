@@ -16,5 +16,5 @@ body {
 
 .slide.slide--current {
   display: block;
-  font-size: 5rem;
+  font-size: 10rem;
 }
